@@ -18,23 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i8Y-io-58D">
-                                <rect key="frame" x="130" y="68" width="155" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-Rg-tYO">
-                                <rect key="frame" x="130" y="265" width="155" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DK-hN-dKO">
-                                <rect key="frame" x="130" y="463" width="155" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-t9-zVh">
-                                <rect key="frame" x="67" y="786" width="279" height="51"/>
+                                <rect key="frame" x="67" y="805" width="279" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="279" id="g49-Lz-zwr"/>
@@ -45,25 +30,43 @@
                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAh-gm-Ffm"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="q8v-av-H1j">
+                                <rect key="frame" x="146" y="96" width="122" height="534"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLD-pQ-HqX">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Dx-WI9">
+                                        <rect key="frame" x="0.0" y="203" width="122" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-On-1Qz">
+                                        <rect key="frame" x="0.0" y="406" width="122" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="e3B-t9-zVh" secondAttribute="bottom" constant="59" id="5Wu-yt-Cre"/>
+                            <constraint firstAttribute="bottom" secondItem="e3B-t9-zVh" secondAttribute="bottom" constant="40" id="5Wu-yt-Cre"/>
+                            <constraint firstItem="q8v-av-H1j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HjU-G4-NrH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3B-t9-zVh" secondAttribute="trailing" constant="68" id="Ld5-qg-0Gj"/>
+                            <constraint firstItem="q8v-av-H1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="93" id="R2W-mb-jrr"/>
                             <constraint firstItem="e3B-t9-zVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Zjj-wg-ibK"/>
+                            <constraint firstAttribute="trailing" secondItem="q8v-av-H1j" secondAttribute="trailing" constant="146" id="nxA-sC-6Br"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="greenColorView" destination="5DK-hN-dKO" id="mGr-II-QIs"/>
                         <outlet property="nextButton" destination="e3B-t9-zVh" id="buM-Hn-LhF"/>
-                        <outlet property="redColorView" destination="i8Y-io-58D" id="afw-zz-Cnt"/>
-                        <outlet property="yellowColorView" destination="yfZ-Rg-tYO" id="49l-CC-OrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36.231884057971016" y="16.741071428571427"/>
+            <point key="canvasLocation" x="36" y="16.256157635467982"/>
         </scene>
     </scenes>
 </document>
