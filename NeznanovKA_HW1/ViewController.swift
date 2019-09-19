@@ -15,26 +15,27 @@ class ViewController: UIViewController {
     @IBOutlet private var greenColorView: UIView!
     @IBOutlet private var nextButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         redColorView.backgroundColor = #colorLiteral(red: 0.5542624676, green: 0.05161597182, blue: 0.02569532127, alpha: 1)
+        redColorView.layer.cornerRadius = redColorView.frame.size.height/2
+        print(redColorView.frame.size.height)
         yellowColorView.backgroundColor = #colorLiteral(red: 0.5506193329, green: 0.4922245629, blue: 0.07830767883, alpha: 1)
+        yellowColorView.layer.cornerRadius = yellowColorView.frame.size.height/2
         greenColorView.backgroundColor = #colorLiteral(red: 0.1704105357, green: 0.5628845531, blue: 0.0493475712, alpha: 1)
+        greenColorView.layer.cornerRadius = greenColorView.frame.size.height/2
         
-
+        nextButton.layer.cornerRadius = 20
+        
+        
+        
     }
 
     var count = 0
     
     @IBAction private func changeColor() {
-        //print(1)
-        
-//        enum lightColor: Int{
-//            case redLight = 0
-//            case yellowLight = 1
-//            case greenLight = 2
-//        }
         
         if  count == 0 {
             greenColorView.backgroundColor = #colorLiteral(red: 0.1704105357, green: 0.5628845531, blue: 0.0493475712, alpha: 1)
