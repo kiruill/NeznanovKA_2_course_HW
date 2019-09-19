@@ -21,28 +21,25 @@
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-t9-zVh">
                                 <rect key="frame" x="67" y="805" width="279" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="279" id="g49-Lz-zwr"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAh-gm-Ffm"/>
+                                    <action selector="changeColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3E-tJ-Tyg"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="q8v-av-H1j">
-                                <rect key="frame" x="146" y="96" width="122" height="534"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="q8v-av-H1j">
+                                <rect key="frame" x="146" y="93" width="122" height="527"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLD-pQ-HqX">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLD-pQ-HqX">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="129"/>
                                         <color key="backgroundColor" red="0.55426246761658038" green="0.051615971815038561" blue="0.02569532126643452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Dx-WI9">
-                                        <rect key="frame" x="0.0" y="203" width="122" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Dx-WI9">
+                                        <rect key="frame" x="0.0" y="199" width="122" height="129"/>
                                         <color key="backgroundColor" red="0.5506193329015544" green="0.49222456293589673" blue="0.078307678834736202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-On-1Qz">
-                                        <rect key="frame" x="0.0" y="406" width="122" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-On-1Qz">
+                                        <rect key="frame" x="0.0" y="398" width="122" height="129"/>
                                         <color key="backgroundColor" red="0.17041053571632109" green="0.56288455310880825" blue="0.049347571199178264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -57,15 +54,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3B-t9-zVh" secondAttribute="trailing" constant="68" id="Ld5-qg-0Gj"/>
                             <constraint firstItem="q8v-av-H1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="93" id="R2W-mb-jrr"/>
                             <constraint firstItem="e3B-t9-zVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Zjj-wg-ibK"/>
+                            <constraint firstAttribute="bottom" secondItem="q8v-av-H1j" secondAttribute="bottom" constant="276" id="dG9-kc-Cpw"/>
                             <constraint firstAttribute="trailing" secondItem="q8v-av-H1j" secondAttribute="trailing" constant="146" id="nxA-sC-6Br"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="greenColorView" destination="hpT-On-1Qz" id="R1z-Gw-gZX"/>
-                        <outlet property="nextButton" destination="e3B-t9-zVh" id="gwG-Ca-AkL"/>
-                        <outlet property="redColorView" destination="OLD-pQ-HqX" id="2dR-Mo-Dso"/>
-                        <outlet property="yellowColorView" destination="geA-Dx-WI9" id="yHe-Sg-KDr"/>
+                        <outlet property="greenColorView" destination="hpT-On-1Qz" id="uYd-Kb-VeU"/>
+                        <outlet property="nextButton" destination="e3B-t9-zVh" id="C2F-KR-a59"/>
+                        <outlet property="redColorView" destination="OLD-pQ-HqX" id="L4e-Ai-tTm"/>
+                        <outlet property="yellowColorView" destination="geA-Dx-WI9" id="jmT-Zj-1DX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
