@@ -35,15 +35,15 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLD-pQ-HqX">
                                         <rect key="frame" x="0.0" y="0.0" width="122" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.55426246761658038" green="0.051615971815038561" blue="0.02569532126643452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Dx-WI9">
                                         <rect key="frame" x="0.0" y="203" width="122" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.5506193329015544" green="0.49222456293589673" blue="0.078307678834736202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-On-1Qz">
                                         <rect key="frame" x="0.0" y="406" width="122" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.17041053571632109" green="0.56288455310880825" blue="0.049347571199178264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
@@ -52,6 +52,7 @@
                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="e3B-t9-zVh" secondAttribute="bottom" constant="40" id="5Wu-yt-Cre"/>
+                            <constraint firstItem="q8v-av-H1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="8XA-kM-iPr"/>
                             <constraint firstItem="q8v-av-H1j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HjU-G4-NrH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3B-t9-zVh" secondAttribute="trailing" constant="68" id="Ld5-qg-0Gj"/>
                             <constraint firstItem="q8v-av-H1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="93" id="R2W-mb-jrr"/>
@@ -61,7 +62,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="e3B-t9-zVh" id="buM-Hn-LhF"/>
+                        <outlet property="greenColorView" destination="hpT-On-1Qz" id="R1z-Gw-gZX"/>
+                        <outlet property="nextButton" destination="e3B-t9-zVh" id="gwG-Ca-AkL"/>
+                        <outlet property="redColorView" destination="OLD-pQ-HqX" id="2dR-Mo-Dso"/>
+                        <outlet property="yellowColorView" destination="geA-Dx-WI9" id="yHe-Sg-KDr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
